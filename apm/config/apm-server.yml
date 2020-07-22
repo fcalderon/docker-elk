@@ -1,0 +1,12 @@
+
+output.elasticsearch:
+  hosts: ['es01:9200']
+host: "0.0.0.0:8200"
+secret_token: "123456"
+# apm-server.kibana.enabled: true
+# apm-server.kibana.host: "http://kib01:5601"
+apm-server:
+  read_timeout: 45s
+  write_timeout: 45s
+  max_connections: 0
+  host: 0.0.0.0:8200
